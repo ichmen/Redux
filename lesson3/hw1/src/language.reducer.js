@@ -1,4 +1,4 @@
-import { SET } from "./language.action";
+import { SET } from "./language.actions";
 
 export function languageReducer(state = "en", action) {
   switch (action.type) {

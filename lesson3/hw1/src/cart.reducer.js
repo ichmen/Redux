@@ -8,10 +8,10 @@ export function cartReducer(state = { products: [] }, action) {
         products: [...state.products, action.payload.product],
       };
     case REMOVE:
-      const modifiedUsers = state.products.filter(
+      const modifiedProducts = state.products.filter(
         (product) => product.id !== action.payload.productId
       );
-      return { ...state, products: [modifiedUsers] };
+      return { products: modifiedProducts };
     default:
       return state;
   }

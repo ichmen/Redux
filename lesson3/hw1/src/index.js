@@ -16,3 +16,4 @@ store.dispatch(removeProduct(22));
 store.dispatch(setUser(user));
 store.dispatch(setLanguage("de"));
 store.dispatch(removeUser());
+store.dispatch(removeProduct(23));

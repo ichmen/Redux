@@ -1,11 +1,15 @@
 import { ADD, DELETE, UPDATE } from "./users.actions";
 
-const defaultState = { usersList: [] };
+const initialState = { usersList: [] };
 
-export function userReducer(state = defaultState, action) {
+export function userReducer(state = initialState, action) {
   switch (action.type) {
     case ADD: {
-      return { ...state, usersList: [...state.usersList, action.payload.user] };
+      console.log(state);
+      return {
+        ...state,
+        usersList: [...state.usersList, action.payload.user],
+      };
     }
     case DELETE: {
       return {

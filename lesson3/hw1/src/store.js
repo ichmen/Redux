@@ -9,7 +9,8 @@ const app = combineReducers({
   cart: cartReducer,
 });
 
-export const store = createStore(
+const store = createStore(
   app,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
+export default store;

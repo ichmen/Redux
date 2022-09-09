@@ -1,11 +1,11 @@
-import React from "react";
-import { createStore } from "redux";
-import { Provider } from "react-redux";
-import UsersList from "./users/UsersList";
-import users from "./users";
+import React from 'react';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import UsersList from './users/UsersList';
+import users from './users';
 
-const NEXT = "USERS/NEXT";
-const PREVIOUS = "USERS/PREVIOUS";
+const NEXT = 'USERS/NEXT';
+const PREVIOUS = 'USERS/PREVIOUS';
 
 export default function App() {
   return (
@@ -48,7 +48,7 @@ function usersReducer(state = defaultState, action) {
 
 const store = createStore(
   usersReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
 
 // function counterReducer(state = 0, action) {
